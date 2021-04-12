@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+
+    <main>
+<h1>Class 1 Lab</h1>
+
+<p style="background-color: rgb(61, 190, 199);">What is your name?</p>
+<p style="background-color: rgb(155, 93, 190);">What is your major?</p>
+<p style="background-color: rgb(250, 248, 128);">What is your favorite country?</p>
+<p style="background-color: rgb(71, 211, 43);">What is your favorite color?</p>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        let userName=prompt('What is your name?');
+        alert('welcome  '+userName);
+        let userMajor=prompt('What is your major?');
+        let userCountry=prompt('What is your favorite country?');
+        let userColor=prompt('What is your favorite color?');
+        alert('Greetings  '+userName +' '+userMajor +' '+userCountry +' '+userColor);
+
+
+        function printuserName(name){
+            alert('welcome for you');
+            console.log(name);
+            document.write(name);
+        }
+printuserName(userName)
+
+
+function printuserMajor(major){
+            alert('Great major');
+            console.log(major);
+            document.write(major);
+        }
+printuserMajor(userMajor)
+
+
+function printuserCountry(country){
+            alert('beautiful country');
+            console.log(country);
+            document.write(country);
+        }
+printuserCountry(userCountry)
+
+
+function printuserColor(color){
+            alert('nice color');
+            console.log(color);
+            document.write(color);
+        }
+printuserColor(userColor)
+    </script>
+</body>
+</html>
