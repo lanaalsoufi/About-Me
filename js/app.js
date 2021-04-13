@@ -33,7 +33,7 @@ if(quesTwo === 'yes'){
 }
 
 let quesThree = prompt('Do I study at ASAC?').toLowerCase();
-//console.log(thirdQuestion);
+//console.log(quesThree);
 
 if(quesThree === 'yes'){
     alert('Your answer is correct ');
@@ -44,7 +44,7 @@ if(quesThree === 'yes'){
 }
 
 let quesFour = prompt('Do I like reading?').toLowerCase();
-//console.log(fourthQuestion);
+//console.log(quesFour);
 
 if(quesFour=== 'yes'){
     alert('Your answer is correct ');
@@ -55,7 +55,7 @@ if(quesFour=== 'yes'){
 }
 
 let quesFive = prompt('Do I love the winter season').toLowerCase();
-//console.log(fifthQuestion);
+//console.log(quesFive);
 
 if(quesFive === 'no'){
     alert('Your answer is correct ');
@@ -64,6 +64,8 @@ if(quesFive === 'no'){
 }else{
     alert('Unfortunately, Your answer is wrong');
 }
+
+
 
 for(let i=0 ; i<4 ; i++){
 
