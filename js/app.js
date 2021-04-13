@@ -1,51 +1,34 @@
 'use strict';
 
-let userInput = prompt('Do you want to know about me?').toLowerCase();
-if(userInput == 'yes'){
-    alert('welcome');
+const userInput = prompt('Is my major is English literature?').toLowerCase();
 
-}else{
-    alert('ok');
-}
-console.log(userInput);
+console.log('userInput var = ',userInput);
  
-
-let userInput = prompt('Is my major is English literature?');
-if(userInput == 'yes'){
-    alert('your answer is correct');
-
-}else{
-    alert('your answer is wrong');
-}
-
-
+function printuserInput(userInput){
+    let
+} FunctionuserInput = userInput;
 
 let userInput = prompt('Do I study at Al-Isra university?');
-if(userInput == 'yes'){
-    alert('your answer is correct');
-
-}else{
-    alert('your answer is wrong');
-}
 
 
 let userInput = prompt('Do I study at ASAC?');
-if(userInput == 'yes'){
-    alert('your answer is correct');
 
-}else{
-    alert('your answer is wrong');
-}
-  
+
+let userInput = prompt('Do I like reading?');
+
 
 let userInput = prompt('Do I love the winter season');
-if(userInput == 'yes'){
-    alert('your answer is wrong');
 
-}else{
-    alert('your answer is correct');
+
+
+switch(userInput){
+    case 'yes':
+        alert(userInput);
+        break;
+        case 'No':
+            alert(userInput);
+            break;
+            default:
+                alert('your answer is wrong');
+                break;
 }
-
-
-
-

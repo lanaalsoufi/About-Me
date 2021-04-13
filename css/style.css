@@ -1,0 +1,26 @@
+body {
+    width: 960px; 
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+text-transform: uppercase;
+}
+
+header{
+    text-align: center;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #1b2021 ;
+color: #fff;
+}
+
+footer nav a {
+    color: #fff;
+}
