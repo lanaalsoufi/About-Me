@@ -7,63 +7,93 @@ let userName = prompt('Enter Your Name Please ?').toLowerCase();
 //console.log('Your name is: '+userName);
 alert('Hello'+ userName);
 
-let questions = prompt('There is a set of questions about me that you should answer with Yes/ No, \n Are you ready? ');
-alert('Lets start')
+let questions = prompt('There is a set of questions about me that you should answer with yes/y or no/n, \n Are you ready? ');
+alert('Lets start');
+
+
 
 let quesOne = prompt('Is my major is English literature?').toLowerCase();
 //console.log(quesOne);
 
-if(quesOne === 'yes'){
+while (quesOne !== 'yes' && quesOne !== 'no' && quesOne !== 'y' && quesOne !== 'n'){
+    quesOne = prompt('Is my major is English literature?').toLowerCase();
+}
+if(quesOne === 'yes' || quesOne === 'y'){
     alert('Your answer is correct ');
     sum++;
     //console.log('Your answer is correct');
-}else{
+}else if(quesOne === 'no' || quesOne === 'n'){
     alert('Unfortunately, Your answer is wrong');
 }
  
+
+
+
 let quesTwo = prompt('Do I study at Al-Isra university?').toLowerCase();
 //console.log(quesTwo);
 
-if(quesTwo === 'yes'){
+while (quesTwo !== 'yes' && quesTwo !== 'no' && quesTwo !== 'y' && quesTwo !== 'n'){
+    quesTwo = prompt('Do I study at Al-Isra university?').toLowerCase;
+}
+if(quesTwo === 'yes' || quesTwo === 'y'){
     alert('Your answer is correct ');
     sum++;
     //console.log('Your answer is correct');
-}else{
+}else {
     alert('Unfortunately, Your answer is wrong');
 }
+
+
 
 let quesThree = prompt('Do I study at ASAC?').toLowerCase();
 //console.log(quesThree);
 
-if(quesThree === 'yes'){
+while (quesThree !== 'yes' && quesThree !== 'no' && quesThree !== 'y' && quesThree !== 'n'){
+    quesThree = prompt('Do I study at ASAC?').toLowerCase;
+}
+if(quesThree === 'yes' || quesThree === 'y'){
     alert('Your answer is correct ');
     sum++;
     //console.log('Your answer is correct');
-}else{
+}else {
     alert('Unfortunately, Your answer is wrong');
 }
+
+
+
 
 let quesFour = prompt('Do I like reading?').toLowerCase();
 //console.log(quesFour);
 
-if(quesFour=== 'yes'){
+while (quesFour !== 'yes' && quesFour !== 'no' && quesFour !== 'y' && quesFour !== 'n'){
+    quesFour = prompt('Do I like reading?').toLowerCase;
+}
+if(quesFour === 'yes' || quesFour === 'y'){
     alert('Your answer is correct ');
     sum++;
     //console.log('Your answer is correct');
-}else{
+}else {
     alert('Unfortunately, Your answer is wrong');
 }
+
+
+
 
 let quesFive = prompt('Do I love the winter season').toLowerCase();
 //console.log(quesFive);
 
-if(quesFive === 'no'){
+while (quesFive !== 'yes' && quesFive !== 'no' && quesFive !== 'y' && quesFive !== 'n'){
+    quesFive = prompt('Do I love the winter season?').toLowerCase;
+}
+if(quesFive === 'yes' || quesFive === 'y'){
     alert('Your answer is correct ');
     sum++;
     //console.log('Your answer is correct');
-}else{
+}else {
     alert('Unfortunately, Your answer is wrong');
 }
+
+
 
 
 
