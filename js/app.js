@@ -85,7 +85,7 @@ let quesFive = prompt('Do I love the winter season').toLowerCase();
 while (quesFive !== 'yes' && quesFive !== 'no' && quesFive !== 'y' && quesFive !== 'n'){
     quesFive = prompt('Do I love the winter season?').toLowerCase();
 }
-if(quesFive === 'yes' || quesFive === 'y'){
+if(quesFive === 'no' || quesFive === 'n'){
     alert('Your answer is correct ');
     sum++;
     //console.log('Your answer is correct');
