@@ -26,6 +26,7 @@ function major(ans){
   return ans;
 }
 
+
 function university(ans){
   while (ans !== 'yes' && ans !== 'no' && ans !== 'y' && ans !== 'n') {
     quesTwo = prompt('Do I study at Al-Isra university?').toLowerCase;
@@ -39,14 +40,7 @@ function university(ans){
   }
   return ans;
 }
-
-let quesThree = prompt('Do I study at ASAC?').toLowerCase();
-//console.log(quesThree);
-
-while (quesThree !== 'yes' && quesThree !== 'no' && quesThree !== 'y' && quesThree !== 'n'){
-    quesThree = prompt('Do I study at ASAC?').toLowerCase();
-}
-if(quesThree === 'yes' || quesThree === 'y'){
+ 
 
 function asac(ans){
   while (ans !== 'yes' && ans !== 'no' && ans !== 'y' && ans !== 'n') {
@@ -64,14 +58,6 @@ function asac(ans){
 }
 
 
-let quesFour = prompt('Do I like reading?').toLowerCase();
-//console.log(quesFour);
-
-while (quesFour !== 'yes' && quesFour !== 'no' && quesFour !== 'y' && quesFour !== 'n'){
-    quesFour = prompt('Do I like reading?').toLowerCase();
-}
-if(quesFour === 'yes' || quesFour === 'y'){
-
 function reading(ans){
   while (ans !== 'yes' && ans !== 'no' && ans !== 'y' && ans !== 'n') {
     quesFour = prompt('Do I like reading?').toLowerCase;
@@ -88,14 +74,6 @@ function reading(ans){
 }
 
 
-let quesFive = prompt('Do I love the winter season').toLowerCase();
-//console.log(quesFive);
-
-while (quesFive !== 'yes' && quesFive !== 'no' && quesFive !== 'y' && quesFive !== 'n'){
-    quesFive = prompt('Do I love the winter season?').toLowerCase();
-}
-if(quesFive === 'no' || quesFive === 'n'){
-
 function season(ans){
   while (ans !== 'yes' && ans !== 'no' && ans !== 'y' && ans !== 'n') {
     quesFive = prompt('Do I love the winter season?').toLowerCase;
@@ -110,6 +88,7 @@ function season(ans){
   return ans;
 }
 
+
 function myAge(){
   for (let i = 0; i < 4; i++) {
     let age = prompt('Guess how old am I ?\n' + 'The answer between 20-30\n' + 'You have just 4 chances');
@@ -117,67 +96,78 @@ function myAge(){
       alert('Yes this is a correct answer');
       sum++;
       break;
-    }else if(age < 22){
+    }else if(age < 23){
       alert('No, its too low \n' + ' try it again');
     }else if (age > 23) {
       alert('No its too high \n' + 'try again');
     }
-    if (i === 4) {
+    if (i === 3) {
       alert('the correct answer is 23');
     }
   }
 }
 
-function country(place){
-  for (let y = 0; y < 6; y++) {
-    myChoice = prompt('Give me the name of the country I want to travel to ?');
-    for (let i = 0; i < countriesArray.length; i++) {
 
-      if (myChoice === countriesArray[i]) {
-        alert('correct');
-        y = 6;
-        sum++;
-        break;
-      }
+// function country(){
+// let myChoice = prompt('Enter the country');
 
-    
-    
-        let countriesArray = ['Palestine','France','Spain','Turkey','Italy'];
-        let myChoice = '';
-        for (let y = 0; y < 6; y++){ 
-               myChoice = prompt('Give me the name of the country I want to travel to ?');
-              for (let i = 0; i < countriesArray.length ; i++) {
+//   for (let y = 0; y < 6; y++) {
+//     for (let i = 0; i < countriesArray.length; i++) {
+
+//       if (myChoice === countriesArray[i]) {
+//         alert('correct');
+//         y = 6;
+//         sum++;
+//         break;
+//       }
+// {
+// {
+// }
+  
+//         if (y==5){
+//             alert ('No more chances \n'+'the right answers are = '+ countriesArray);
+//           }else if(y<6){
+//              alert('Your answer is uncorrect \nplease Try again');
+//              myChoice = prompt('Try again') 
+            
+//         }
         
-            if (myChoice == countriesArray[i]) {
-               alert( 'correct');
-              y=6;
-              sum++;
-              break;
-            }  
-        }
-        if (y==5){
-            alert ('No more chances \n'+'the right answers are = '+ countriesArray)
-          }else if(y<6){
-             alert('Your answer is uncorrect \nplease Try again');
-        }
+//         }
         
-        }
+//     }
+
+
+
+
+
+
+function country(){
+let countriesArray = ['Palestine','France','Spain','Turkey','Italy',''];
+let myChoice = ''
+for (let y = 0; y < 6; y++){ 
+       myChoice = prompt('Give me the name of the country I want to travel to ?');
+      for (let i = 0; i < countriesArray.length ; i++) {
+
+    if (myChoice == countriesArray[i]) {
+       alert( 'correct');
+      y=6;
+      sum++;
+      break;
+    }
     
-        alert('you have got a score '+sum+' of 7');
-
-alert('Thank you for answering the questions '+userName +'\n Have a nice day');
-
-
-    }
-    if (y === 5) {
-      alert('No more chances \n' + 'the right answers are = ' + countriesArray);
-    } else if (y < 6) {
-      alert('Your answer is uncorrect \nplease Try again');
-    }
-
-  }
-  return place;
 }
+if (y==5){
+    alert ('No more chances \n'+'the right answers are = '+ countriesArray)
+  }else if(y<6){
+     alert('Your answer is uncorrect \nplease Try again');
+}
+
+}
+
+alert('you have got a score '+sum+' of 7');
+alert('Thank you for answering the questions '+userName +'\n Have a nice day');
+}
+
 let quesOne = prompt('Is my major is English literature?').toLowerCase();
 major(quesOne);
 let quesTwo = prompt('Do I study at Al-Isra university?').toLowerCase();
@@ -191,7 +181,4 @@ season(quesFive);
 myAge();
 
 let countriesArray = ['Palestine', 'France', 'Spain', 'Turkey', 'Italy'];
-let myChoice = '';
-country(myChoice);
-alert('you have got a score ' + sum + ' of 7');
-alert('Thank you for answering the questions ' + userName + '\n Have a nice day');
+country();
