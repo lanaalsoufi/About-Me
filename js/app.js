@@ -109,6 +109,7 @@ function season(ans){
   }
   return ans;
 }
+
 function myAge(){
   for (let i = 0; i < 4; i++) {
     let age = prompt('Guess how old am I ?\n' + 'The answer between 20-30\n' + 'You have just 4 chances');
@@ -152,8 +153,7 @@ function country(place){
               y=6;
               sum++;
               break;
-            }
-            
+            }  
         }
         if (y==5){
             alert ('No more chances \n'+'the right answers are = '+ countriesArray)
